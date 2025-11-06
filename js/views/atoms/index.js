@@ -23,7 +23,7 @@ export const Heading = (text, num = 1, className = '') => {
 }
 
 export const Ul = (className = '') => {
-    const el = document.createElement('el')
+    const el = document.createElement('ul')
     el.className = className
     return el
 }

@@ -12,7 +12,7 @@ export const getCategoryList = async () => {
         title: item.title,
         url: `/index.htm?category=${item.slug}`,
         textColor: curCategory === item.slug
-            ? 'text-yellow-500'
+            ? 'border-2 rounded-full text-white'
             : 'text-white'
     }))
     

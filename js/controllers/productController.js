@@ -1,3 +1,4 @@
+import { addToCart } from "../models/cartModel.js"
 import { getDetails, getList } from "../models/productModel.js"
 import { isLoggedIn } from "../services/auth.js"
 import { ProductDetailsView, ProductListView } from "../views/organisms/productViews.js"
@@ -60,7 +61,7 @@ const addToCartHandler = async (e) => {
 
     console.log({ productId, quantity })
 
-    // if (quantity && productId) {
-    //     const data = await addToCart(productId, quantity)
-    // }
+    if (quantity && productId) {
+        const data = await addToCart(productId, quantity)
+    }
 }

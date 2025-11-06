@@ -30,8 +30,8 @@ export const NavBarView = arrNavItems => {
     arrNavItems.forEach(item => {
         const { url, title } = item
 
-        const li = Li()
-        const item1 = Link(url, title, `block p-4 ${item.textColor}`)
+        const li = Li('list-none p-4')
+        const item1 = Link(url, title, `block p-2 ${item.textColor}`)
         li.append(item1)
         ul.append(li)
     })
