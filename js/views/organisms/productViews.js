@@ -1,5 +1,5 @@
 import { PriceToDkk } from "../../utils/index.js"
-import { Button, Div, Form, Fragment, Heading, Image, Input, Paragraph } from "../atoms/index.js"
+import { Button, Div, Form, Fragment, Heading, Image, Input, Link, Paragraph } from "../atoms/index.js"
 
 export const ProductListView = (products, category) => {
     const el = Fragment()

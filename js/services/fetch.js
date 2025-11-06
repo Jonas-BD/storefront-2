@@ -13,7 +13,7 @@ export const request = async (url, method = 'GET', body = {}) => {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            ...(token?.accessToken ? { 'Authorization': `Bearer ${token.accessToken}` } : {})
+            ...(token?.accessToken ? { Authorization: `Bearer ${token.accessToken}` } : {})
         },
         ...(hasBody ? { body: JSON.stringify(body) } : {})
     }
