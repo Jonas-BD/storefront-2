@@ -9,7 +9,7 @@ export const Div = (className = '') => {
     return el
 }
 
-export const Paregraph = (className = '') => {
+export const Paragraph = (className = '') => {
     const el = document.createElement('p')
     el.className = className
     return el
