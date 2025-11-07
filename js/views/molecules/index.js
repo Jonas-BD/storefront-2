@@ -1,6 +1,7 @@
 import { Div, Heading, Image, Input, Label, Li, Link, Paragraph, Ul } from "../atoms/index.js"
 import { getCartList } from "../../models/cartModel.js"
 import { getToken } from "../../services/auth.js"
+import { cookieBanner } from "../../controllers/cookieBannerController.js"
 
 export const HeaderView = async () => {
     // This is the side header
@@ -99,6 +100,7 @@ export const MainView = (title, content) => {
     el.className = 'p-4 min-h-60 container m-auto flex-grow'
     const h1 = Heading(title)
     el.append(h1, content)
+    el.append(cookieBanner())
     return el
 }
 
