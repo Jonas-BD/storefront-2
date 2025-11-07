@@ -1,5 +1,6 @@
-export const Fragment = () => {
+export const Fragment = (className = '') => {
     const el = document.createDocumentFragment()
+    el.className = className
     return el
 }
 

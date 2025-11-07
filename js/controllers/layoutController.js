@@ -10,7 +10,7 @@ export const Layout = async (title, content) => {
     const el = Fragment()
 
     el.append(
-        HeaderView(),
+        await HeaderView(),
         NavBarView(arrNavItems),
         MainView(title, content),
         FooterView()

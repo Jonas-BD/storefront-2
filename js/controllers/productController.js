@@ -59,9 +59,11 @@ const addToCartHandler = async (e) => {
     const productId = form.productId.value
     const quantity = form.quantity.value
 
-    console.log({ productId, quantity })
-
     if (quantity && productId) {
         const data = await addToCart(productId, quantity)
+        if (data) {
+            // Dispatch custom event when cart is updated
+            window.dispatchEvent(new CustomEvent('cartUpdated'))
+        }
     }
 }
