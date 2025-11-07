@@ -110,8 +110,8 @@ export const FooterView = () => {
 
 export const FormGroup = (title, name, placeholder, type, value) => {
     const el = Div('mb-4')
-    const label = Label(title, name)
-    const input = Input(name, placeholder, type, value)
+    const label = Label(title, name, 'flex')
+    const input = Input(name, placeholder, type, value, 'flex border-2 rounded p-2')
     el.append(label, input)
     return el
 }

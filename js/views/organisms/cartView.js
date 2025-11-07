@@ -1,5 +1,5 @@
 import { PriceToDkk } from "../../utils/index.js"
-import { Button, Div, Li, Ul } from "../atoms/index.js"
+import { Button, Div, Image, Li, Ul } from "../atoms/index.js"
 
 export const cartListView = (data = []) => {
     const el = Ul()
@@ -20,7 +20,7 @@ export const cartListView = (data = []) => {
         li.append(price)
 
         const action = Div('text-right w-[10%]')
-        const delBtn = Button('Slet', 'button')
+        const delBtn = Button('Fjern', 'button', 'text-red-800')
         delBtn.dataset.cartid = item.id
         action.append(delBtn)
         li.append(action)
